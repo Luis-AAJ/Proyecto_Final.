@@ -4,7 +4,15 @@
 #include <stdlib.h>   //Sirve para ejecutar subprocesos o comandos del sistema operativo.
 #include <String.h>   //contiene un conjunto de funciones para manipular cadenas.
 
-struct libreria
+void altalib(int opcion);
+void buslib(int opcion);
+void consult(int opcion);
+void modi(int opcion);
+void bajas(int opcion);
+void imprimir(int opcion);
+
+
+struct libreria  //esta estructura contiene todos los datos que se utilizaran en el programa
 {
 	char codigo_lib[10];
 	char titulo[25];
@@ -14,19 +22,33 @@ struct libreria
 	char ISBN[15];
 	char num_ejem[10];
 };
-void altalib();
-void buslib();
-void consult();
-void modi();
-void bajas();
-void imprimir();
 
-
-int main()
-int opcion;
+	struct libreria lib[] = {
+								{""},
+								{""},
+								{""},
+								{""},
+								{""},
+								{""},
+								{""},
+	};    			//inicializacion de la estructura de datos a utilizar en el programa
+	struct libros temp;
+	void ordenar(int N)
 {
-	do
+	int x, iact, isig;
+	for(x=0; x<N; x++)
 	{
+		for(iact=0; iact<N-1; iact++)
+		{
+			isig = iact+1;
+			if (strcmp())
+		}
+	}
+}
+int main()
+{
+	int opcion;
+
 		do  {
 			printf("1) alta de libros\n");
 			printf("2) Busqueda de libros\n");
@@ -41,6 +63,7 @@ int opcion;
 			switch(opcion) {
 				case 1: {
 					altalib(opcion);
+					void altalib(struct libreria );
 					break;
 				}
 				
@@ -74,9 +97,12 @@ int opcion;
 					break;
 				}
 			}
-		}while();
-		
-	}
-		//system(pause);
-return 0;
-}
+			//void altalib(struct libreria )
+			{
+				int i;
+				char ;
+			}*/
+		}while(opcion=7);
+		system("pause");
+		return 0;
+};
