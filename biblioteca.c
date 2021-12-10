@@ -98,19 +98,36 @@ int main()
 						if(feof(archivo))
 						printf("Error al escribir archivo\n");					
 						else
-						printf("Fue posible escribir en archivo\n");
+						printf("\nFue posible escribir en archivo\n");
+						puts("Libro agregado\n");
 					}
 					fclose(archivo);
 					break;
 				}
 				case 2: {
 					buslib(opcion);
+					int i, j, aux,comp;
+					char comprobar[100];
 					
+					aux = 0;
+					printf("Ingresa el titulo del libro que deseas buscar: ");
+					fflush(stdin);
+					fgets(comprobar,100,stdin);
+					//cambiar(comprobar);
+					
+					/*for (i = 0; i < 100; i++) {
+						for(j = 0; j<100 && aux == 0; j++) {
+							comp =strcmp(comprobar, libreria[N].);
+							if(comparar ==0) {
+								printf("El libro pertenece al autor %s.\n\n", libreria[N].autor);
+							}
+						}
+					}*/
 					break;
 				}
 				
 				case 3: {
-					consult(opcion);
+					
 					break;
 				}
 				case 4: {
